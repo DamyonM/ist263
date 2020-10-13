@@ -1,0 +1,29 @@
+* {
+    font-family: 'Montserrat';
+}
+.jumbotron {
+    background: #ccc;
+    background-image: url(./images/silhouette.png);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    
+}
+.company-1{
+    background-image: url(./images/company-name-1.png);
+    background-position: 90%;
+    background-repeat: no-repeat;
+}
+.company-1{
+    background-image: url(./images/company-name-2.png);
+    background-position: 90%;
+    background-repeat: no-repeat;
+}
+
+/* 
+  Quick Lookup Guide
+- Change font color     => color: red;
+- Change font size      => font-size: 15px;
+- Text align            => text-align: center
+- Background color      => background-color: blue
+- Select table header row as table>thead>tr { your properties go here }
+*/

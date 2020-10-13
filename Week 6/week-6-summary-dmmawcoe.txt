@@ -1,0 +1,9 @@
+On Tuesday we talked about:
+-Block and Inline elements
+-Document Flow
+-CSS Layouts
+-Box Models
+-Positioning
+
+On Thursday we talked about:
+-We did a lab to make a webpage similar to an image provided using flexboxes and other tools described in the steps.

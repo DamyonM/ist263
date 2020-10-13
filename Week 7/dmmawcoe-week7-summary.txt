@@ -1,0 +1,5 @@
+On Tuesday we had the mid-term.
+On Thursday we talked about:
+-More CSS elements and how we could use them in a page.
+-Started doing the homework due the 13th for the rest of class.
+-I was curious (as I just read comments about the wireframes) as to different nav types other than carousels you would recommend?

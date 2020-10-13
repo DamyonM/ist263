@@ -1,0 +1,36 @@
+body {
+    background-color: #37393A;  
+    font-family: 'Times New Roman', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1, abbr {
+    font-size: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #77B6EA;
+}
+i {
+    color: #A6B9C9;
+}
+u {
+    color: #819BB1;
+}
+p.green {
+    font-size: 25px;
+    color: #7EBAC8;
+}
+ul {
+    color: #2B8EDE;
+}
+li {
+    color: #4FA0E3;
+}
+
+
+
+/* 
+  Quick Lookup Guide
+- Change font color     => color: red;
+- Change font size      => font-size: 15px;
+- Text align            => text-align: center
+- Background color      => background-color: blue
+- Select table header row as table>thead>tr { your properties go here }
+*/

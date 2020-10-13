@@ -1,0 +1,17 @@
+In class on Thursday we talked about:
+
+-The current state of the internet (current websites over 1.2 billion) and the creation of the internet (as we know it buy Tim Berner-Lee at CERN in 1989)
+
+-﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿How the internet was created with the intent to be a communication line if all else failed during the Cold War
+
+-The difference between browsers and how they were similar to a cars engine
+
+-Servers and how they handle traffic requests
+
+-What requests needed to have to be handled by the server--and what it would respond with (2xx success, 3xx redirection, 4xx client error, 5xx server error)
+
+-The different components of the internet and compared those to real world jobs that people could more easily recognize (URL, protocolm, host name/IP, port, TLD, sub domain)
+
+-IP addressed and packet rooting
+
+-My question for the midterm: What are different kinds of browsers--and how do they interact with the internet
