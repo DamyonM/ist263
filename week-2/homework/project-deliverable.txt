@@ -1,0 +1,9 @@
+Website about movies--top 5 all time?
+On each page:
+-Title
+-IMDB rating
+-Trailer (from youtube)
+-Cast (notable actors)
+-The good
+-The bad
+-Drama that arose from movie (ex Django Unchained -> too much n word)
