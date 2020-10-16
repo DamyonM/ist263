@@ -1,3 +1,25 @@
 * {
     text-align: center;
 }
+nav {
+    text-align: right;
+}
+.row {
+    display: flex;
+} 
+.col {
+    flex: .25;
+}
+p.left-text {
+    text-align: left;
+    vertical-align: middle;
+}
+p.right-text {
+    text-align: right;
+    vertical-align: middle;
+}
+.left-image {
+    float:left;
+    margin-right: 1%;
+    margin-bottom: .5em;
+}
