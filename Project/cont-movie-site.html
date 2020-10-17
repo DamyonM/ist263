@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/cont-movie-style.css">
     <title>Damyons favorite cinematography.</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -23,19 +23,21 @@
     </main>
     
     <section>
-        <!--Django Unchained Trailer-->
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/0fUCuvNlOCg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video id="slider" autoplay loop>
+            <source src="images/cont-movie/american-history-x.mp4" type="video/mp4">
+        </video>
 
-        <!--American History X Trailer-->
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/XfQYHqsiN5g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <!--Taxi Driver Trailer-->
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/UUxD4-dEzn0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <!--Full Metal Jacket Trailer-->
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/sOpuEhyAq5U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        <!--A Clockwork Orange Trailer-->
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/vN-1Mup0UI0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <ul class="navigation">
+            <li onclick="videoUrl('images/cont-movie/american-history-x.mp4')"><img src="images/cont-movie/ahx-thumb.jpg" height="200" width="300" alt="American History X thumbnail"></li>
+            <li onclick="videoUrl('images/cont-movie/taxi-driver.mp4')"><img src="images/cont-movie/td-thumb.jpg" height="200" width="300" alt="Taxi Driver thumbnail"></li>
+            <li onclick="videoUrl('images/cont-movie/fmj.mp4')"><img src="images/cont-movie/fmj-thumb.jpg" height="200" width="300" alt ="Full Metal Jacket thumbnail"></li>
+            <li onclick="videoUrl('images/cont-movie/django-unchained.mp4')"><img src="images/cont-movie/du-thumb.jpg" height="200" width="300" alt="Django Unchained"></li>
+            <li onclick="videoUrl('images/cont-movie/clockwork-orange.mp4')"><img src="images/cont-movie/cwo-thumb.jpg" height="200" width="300" alt="Clockwork Orange thumbnail"></li>
+        </ul>
     </section>
+    <script>
+        function videoUrl(url) {
+            document.getElementById("slider").src = url;
+        }
+    </script>
 </body>
