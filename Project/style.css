@@ -1,6 +1,9 @@
 * {
     text-align: center;
 }
+h2 {   
+    text-decoration: underline;
+}
 nav {
     text-align: right;
 }
@@ -8,18 +11,18 @@ nav {
     display: flex;
 } 
 .col {
-    flex: .25;
+    flex: 1;
+    margin-right: 100px;
+    margin-left: 100px;
 }
-p.left-text {
+.col-3 {
+    flex: 3;
+}
+.left-text {
     text-align: left;
     vertical-align: middle;
 }
-p.right-text {
+.right-text {
     text-align: right;
     vertical-align: middle;
-}
-.left-image {
-    float:left;
-    margin-right: 1%;
-    margin-bottom: .5em;
 }
