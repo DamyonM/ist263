@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/cont-movie-style.css">
+    <title>Damyons favorite cinematography.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Damyons top controversial films you should see (in no particular order)</h1>
+        <nav>
+            <a href="movie-site.html">Movies</a> |
+            <a href="show-site.html">Shows</a>
+        </nav>
+        <hr>
+    </main>
+    
+    <section>
+        <video id="slider" autoplay loop>
+            <source src="images/cont-movie/american-history-x.mp4" type="video/mp4">
+        </video>
+
+        <!--Nav bar that shows the movies, doesnt look very good without CSS-->
+        <ul class="navigation">
+            <li onclick="videoUrl('images/cont-movie/american-history-x.mp4')"><img src="images/cont-movie/ahx-thumb.jpg" height="200" width="300" alt="American History X thumbnail">American History X</li>
+            <li onclick="videoUrl('images/cont-movie/taxi-driver.mp4')"><img src="images/cont-movie/td-thumb.jpg" height="200" width="300" alt="Taxi Driver thumbnail">Taxi Driver</li>
+            <li onclick="videoUrl('images/cont-movie/fmj.mp4')"><img src="images/cont-movie/fmj-thumb.jpg" height="200" width="300" alt ="Full Metal Jacket thumbnail">Full Metal Jacket</li>
+            <li onclick="videoUrl('images/cont-movie/django-unchained.mp4')"><img src="images/cont-movie/du-thumb.jpg" height="200" width="300" alt="Django Unchained">Django Unchained</li>
+            <li onclick="videoUrl('images/cont-movie/clockwork-orange.mp4')"><img src="images/cont-movie/cwo-thumb.jpg" height="200" width="300" alt="Clockwork Orange thumbnail">A Clockwork Orange</li>
+        </ul>
+    </section>
+    <script>
+        function videoUrl(url) {
+            document.getElementById("slider").src = url;
+        }
+    </script>
+</body>
