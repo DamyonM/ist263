@@ -20,19 +20,67 @@
     </main>
 
     <section>
-        <!--Avatar Section-->
-        <img src="images/show/atla.jpg" width=500 alt="Avatar: The Last Airbender Poster">
-
-        <!--Breaking Bad Section-->
-        <img src="images/show/breaking-bad.jpg" width=500 alt="Breaking Bad Poster">
-
-        <!--Letterkenny Section-->
-        <img src="images/show/letterkenny.jpg" width=500 alt="Letterkenny Poster">
+        <h2 id="show-title">Letterkenny!</h2>
+        <img id="poster" src="images/show/letterkenny.jpg" width="500" height="700" alt="Letterkenny poster">
+        <p id="about-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate explicabo molestias quos error in optio, id, suscipit voluptatum fugit doloremque tempora illo nisi aliquid quasi, rem doloribus quibusdam vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem temporibus aperiam reprehenderit, ab fugit cumque ex sunt obcaecati consequuntur eaque. Nesciunt possimus velit assumenda at molestiae dolor? Id, deserunt quos.</p>
         
-        <!--Lie To Me Section-->
-        <img src="images/show/lie-to-me.jpg" width=500 alt="Lie To Me Poster">
-
-        <!--Rick & Morty Section-->
-        <img src="images/show/rick-and-morty.jpg" width=500 alt="Rick & Morty Poster">
+        <!--Slider code-->
+        <div class="slide-container">
+            <input type="range" min="1" max="5" class="slider" id="show-slider">
+            <span id="which-show"></span>
+        </div>
     </section>
+
+    <script>
+        var slider = document.getElementById("show-slider");
+        var output = document.getElementById("which-show");
+        var imgSrc = ["", "images/show/the-boys.jpg", "images/show/breaking-bad.jpg", "images/show/letterkenny.jpg", "images/show/lie-to-me.jpg", "images/show/rick-and-morty.jpg"]
+
+        //Gets the slider value
+        output.innerHTML = slider.value;
+
+        //Update slider value
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+            
+            //Update the poster
+            document.getElementById("poster").src = imgSrc[output.innerHTML]
+
+            var oldTitle = document.getElementById("show-title");
+            var oldText = document.getElementById("about-show");
+
+            //Change text & blurb based on where slider is
+            switch(output.innerHTML) {
+                case '1':
+                    oldTitle.innerHTML = "The Boys!";
+                    oldText.innerHTML = "The Boys: Lorem"
+                    break;
+
+                case '2':
+                    oldTitle.innerHTML = "Breaking Bad!";
+                    oldText.innerHTML = "Breaking Bad: Lorem"
+                    break;
+
+                case '3':
+                    oldTitle.innerHTML = "Letterkenny!";
+                    oldText.innerHTML = "Letterkenny: Lorem"
+                    break;
+
+                case '4':
+                    oldTitle.innerHTML = "Lie To Me!";
+                    oldText.innerHTML = "Lie To Me: Lorem"
+                    break;
+
+                case '5':
+                    oldTitle.innerHTML = "Rick & Morty!";
+                    oldText.innerHTML = "Rick & Morty: Lorem"
+                    break;
+                
+                //This should never trigger if working properly--only can achieve values 1-5
+                default:
+                    console.log("Didnt work--went to default");
+                    break;
+            }
+        }
+    </script>
 </body>
