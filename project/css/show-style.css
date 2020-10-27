@@ -1,5 +1,7 @@
 * {
     text-align: center;
+    background-color: #0D1B1E;
+    color: #C7D3DD;
 }
 nav {
     text-align: right;
@@ -8,7 +10,8 @@ nav {
     width: 100%;
 }
 .slider {
-    width: 100%;
+    -webkit-appearance: none;
+    width: 35%;
     height: 25px;
     background: #ccc;
     outline: none;
@@ -24,9 +27,21 @@ nav {
     appearance: none;
     width: 25px;
     height: 25px;
-    background: black;
+    background:#37393A;
     cursor: pointer;
+    outline: none;
   }
 span {
-    color: white;
+    opacity: 0;
+}
+img {
+    opacity: .7;
+    width: 500px;
+    height: 700px;
+}
+img:hover {
+    opacity: 1;
+    width: 525px;
+    height: 750px;
+    transition: .1s;
 }

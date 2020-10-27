@@ -1,5 +1,7 @@
 * {
     text-align: center;
+    background-color: #0D1B1E;
+    color: #C7D3DD;
 }
 h2 {   
     text-decoration: underline;
@@ -26,4 +28,10 @@ nav {
     text-align: right;
     vertical-align: middle;
 }
-
+iframe {
+    height: 250px;
+    width: 500px;
+}
+img {
+    width: 500px;
+}

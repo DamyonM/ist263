@@ -3,6 +3,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    background-color: #0D1B1E;
+    color: #C7D3DD;
 }
 nav {
     float: right;
@@ -39,6 +41,7 @@ section .navigation li {
     padding: 3px 3px 0;
     opacity: .7;
     transition: .5s;
+    color: black;
 }
 section .navigation li:hover {
     opacity: 1;
