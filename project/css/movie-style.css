@@ -2,20 +2,19 @@
     text-align: center;
     background-color: #0D1B1E;
     color: #C7D3DD;
+    margin-left: 5rem;
+}
+p {
+    font-size: 30px;
 }
 h2 {   
     text-decoration: underline;
-}
-nav {
-    text-align: right;
 }
 .row {
     display: flex;
 } 
 .col {
     flex: 1;
-    margin-right: 100px;
-    margin-left: 100px;
 }
 .col-3 {
     flex: 3;
