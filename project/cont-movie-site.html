@@ -8,51 +8,55 @@
     <link rel="stylesheet" href="css/cont-movie-style.css">
     <link rel="stylesheet" href="css/nav.css">
     <title>Damyons favorite cinematography.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <div id="header" class="nav">
+        <nav>
+            <div class="logo">
+                <h4>DMDb</h4>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="movie-site.html">Favorite Movies</a>
+                </li>
+                <li>
+                    <a href="cont-movie-site.html" style="color:black">Favorite Controversial Movies</a>
+                </li>
+                <li>
+                    <a href="show-site.html">Favorite Shows</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav> 
+    </div>
     <main>
-        <div id="header">
-            <nav>
-                <div class="logo">
-                    <h4>DMDb</h4>
-                </div>
-                <ul class="nav-links">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="movie-site.html">Favorite Movies</a>
-                    </li>
-                    <li>
-                        <a href="cont-movie-site.html" style="color:black">Favorite Controversial Movies</a>
-                    </li>
-                    <li>
-                        <a href="show-site.html">Favorite Shows</a>
-                    </li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav> 
-        </div>
-        
-        <video id="slider" autoplay loop id="content">
-            <source src="images/cont-movie/american-history-x.mp4" type="video/mp4">
-        </video>
 
-        <!--Nav bar that shows the movies-->
-        <ul class="navigation">
-            <li onclick="videoUrl('images/cont-movie/american-history-x.mp4')"><img src="images/cont-movie/ahx-thumb.jpg" height="200" width="300" alt="American History X thumbnail">American History X</li>
-            <li onclick="videoUrl('images/cont-movie/taxi-driver.mp4')"><img src="images/cont-movie/td-thumb.jpg" height="200" width="300" alt="Taxi Driver thumbnail">Taxi Driver</li>
-            <li onclick="videoUrl('images/cont-movie/fmj.mp4')"><img src="images/cont-movie/fmj-thumb.jpg" height="200" width="300" alt ="Full Metal Jacket thumbnail">Full Metal Jacket</li>
-            <li onclick="videoUrl('images/cont-movie/django-unchained.mp4')"><img src="images/cont-movie/du-thumb.jpg" height="200" width="300" alt="Django Unchained">Django Unchained</li>
-            <li onclick="videoUrl('images/cont-movie/clockwork-orange.mp4')"><img src="images/cont-movie/cwo-thumb.jpg" height="200" width="300" alt="Clockwork Orange thumbnail">A Clockwork Orange</li>
-        </ul>
+        <div class="row">
+            <video id="slider" autoplay loop class="col">
+                <source src="images/cont-movie/american-history-x.mp4" type="video/mp4">
+            </video>
+        
+        
+            <!--Nav bar that shows the movies-->
+            <ul class="navigation">
+                <li onclick="videoUrl('images/cont-movie/american-history-x.mp4')"><img src="images/cont-movie/ahx-thumb.jpg" height="200" width="300" alt="American History X thumbnail">American History X</li>
+                <li onclick="videoUrl('images/cont-movie/taxi-driver.mp4')"><img src="images/cont-movie/td-thumb.jpg" height="200" width="300" alt="Taxi Driver thumbnail">Taxi Driver</li>
+                <li onclick="videoUrl('images/cont-movie/fmj.mp4')"><img src="images/cont-movie/fmj-thumb.jpg" height="200" width="300" alt ="Full Metal Jacket thumbnail">Full Metal Jacket</li>
+                <li onclick="videoUrl('images/cont-movie/django-unchained.mp4')"><img src="images/cont-movie/du-thumb.jpg" height="200" width="300" alt="Django Unchained">Django Unchained</li>
+                <li onclick="videoUrl('images/cont-movie/clockwork-orange.mp4')"><img src="images/cont-movie/cwo-thumb.jpg" height="200" width="300" alt="Clockwork Orange thumbnail">A Clockwork Orange</li>
+            </ul>
+        </div>
     </main>
     <script>
         function videoUrl(url) {
@@ -61,3 +65,4 @@
     </script>
     <script src="css/nav.js"></script>
 </body>
+</html>

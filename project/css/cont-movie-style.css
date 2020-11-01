@@ -4,10 +4,24 @@
     margin: 0px;
     box-sizing: border-box;
     color: #C7D3DD;
+    background-color: #12232E;
+    font-family: 'Lato', sans-serif;
 }
-nav {
-    float: right;
+.nav {
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
+.row {
+    display: flex;
+    display: -webkit-flex;
+}
+.col {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+} 
 main {
     position: relative;
     width: 100%;
@@ -47,10 +61,26 @@ main .navigation li:hover {
     opacity: 1;
 }
 main .navigation li img {
-    width: 300px;
+    width: 250px;
     transition: .5s;
     background-color: transparent;
 }
 main .navigation li img:hover {
     width: 350px;
+}
+
+@media screen and (max-width:768px) {
+    video {
+        width: 100%;
+    }
+    main .navigation li img:hover {
+        width: 30%;
+    }
+    main .navigation li img {
+        height: 50px;
+        width: 100%;
+    }
+    main .navigation li {
+        font-size: small;
+    }
 }

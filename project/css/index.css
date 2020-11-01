@@ -2,8 +2,10 @@
     text-align: center;
     background-color: #12232E;
     color: #C7D3DD;
+    font-family: 'Lato', sans-serif;
 }
 img {
+    padding: 10px;
     width: 500px;
 }
 p {
