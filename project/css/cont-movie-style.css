@@ -12,6 +12,10 @@
     height: 100%;
     width: 100%;
 }
+.footer {
+    padding: 10px;
+    text-align: center;
+}
 .row {
     display: flex;
     display: -webkit-flex;
