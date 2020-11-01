@@ -45,3 +45,8 @@ img:hover {
     height: 750px;
     transition: .1s;
 }
+@media screen and (max-width:768px) {
+    img {
+        width: 100%;
+    }
+}

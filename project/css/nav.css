@@ -74,6 +74,9 @@ ul {
     body {
         overflow-x: hidden;
     }
+    #header {
+        width: 100%;
+    }
     .nav-links {
         position: fixed;
         right: 0px;

@@ -30,6 +30,7 @@ main .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
 }
 main .navigation li {
     list-style: none;
@@ -48,6 +49,7 @@ main .navigation li:hover {
 main .navigation li img {
     width: 300px;
     transition: .5s;
+    background-color: transparent;
 }
 main .navigation li img:hover {
     width: 350px;
