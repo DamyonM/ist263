@@ -35,15 +35,14 @@ span {
     opacity: 0;
 }
 img {
-    opacity: .7;
     width: 500px;
     height: 700px;
+    transition: .3s;
 }
 img:hover {
-    opacity: 1;
     width: 525px;
     height: 750px;
-    transition: .1s;
+    transition: .3s;
 }
 @media screen and (max-width:768px) {
     img {

@@ -33,3 +33,8 @@ iframe {
 img {
     width: 500px;
 }
+@media screen and (max-width:768px) {
+    col, img {
+        width: 50%;
+    }
+}
