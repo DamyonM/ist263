@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/movie-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Damyons favorite cinematography.</title>
@@ -17,119 +18,170 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">DMDb</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarNavAltMarkup">
-              <div class="navbar-nav navbar-dark bg-dark">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link active" href="movie-site.html">Movies <span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="cont-movie-site.html">Controversial Movies</a>
-                <a class="nav-link" href="show-site.html">Shows</a>
-              </div>
+                <div class="navbar-nav navbar-dark bg-dark">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link active" href="movie-site.html">Movies <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="cont-movie-site.html">Controversial Movies</a>
+                    <a class="nav-link" href="show-site.html">Shows</a>
+                </div>
             </div>
-            <span class="navbar-text navbar-dark bg-dark" style="font-style: italic;">
-            Get it? Instead of IMDb its DMDb?
-            </span>
-          </nav>
+            <span class="navbar-text navbar-dark bg-dark" style="font-style: italic;"> Get it? Instead of IMDb its DMDb? </span>
+        </nav>
     </div>
     <main>
-        <!--Pulp Fiction poster, trailer and blurb-->
-        <h1>Pulp Fiction</h1>
-        <div class="row">
-            <div class="col">
-                <!--Poster from https://live.staticflickr.com/7201/6859796173_060d55448f_b.jpg-->
-                <img src=images/movie/pulp-fiction.jpg alt="Pulp Fiction Poster">
+        <!--Collapsable accordion for each movie-->
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne" style="background-color: #0164a1;">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #007CC7; color: #C7D3DD"> Pulp Fiction
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <!--Pulp Fiction poster, trailer and blurb-->
+                        <div class="row">
+                            <div class="col">
+                                <!--Poster from https://live.staticflickr.com/7201/6859796173_060d55448f_b.jpg-->
+                                <img src=images/movie/pulp-fiction.jpg alt="Pulp Fiction Poster">
+                            </div>
+                            
+                            <div class="col">
+                                <p class="left-text">Pulp Fiction is a movie everyone should watch at least one time in their life. It is an incredible film that really made Tarantino after things like Resevoir Dogs. Between the excellent cast of actors (maybe one of the best to date, including people like Samuel L. Jackson, Tim Roth, John Travolta, Uma Thurman, Christopher Walken, and Bruce Willis). That cast alone should be enough to get someone to watch the movie--but when you include a great, interesting plot and a decent amount of action with a killer soundtrack? You have a top 5 movie for myself.</p>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <!--Trailer from YouTube-->
+                            <iframe src="https://www.youtube.com/embed/s7EdQ4FqbhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTwo" style="background-color: #0164a1;">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: #007CC7; color: #C7D3DD"> The Shining
+                        </button>
+                    </h2>
+                </div>
             
-            <div class="col">
-                <p class="left-text">Pulp Fiction is a movie everyone should watch at least one time in their life. It is an incredible film that really made Tarantino after things like Resevoir Dogs. Between the excellent cast of actors (maybe one of the best to date, including people like Samuel L. Jackson, Tim Roth, John Travolta, Uma Thurman, Christopher Walken, and Bruce Willis). That cast alone should be enough to get someone to watch the movie--but when you include a great, interesting plot and a decent amount of action with a killer soundtrack? You have a top 5 movie for myself.</p>
-            </div>
-        </div>
-        <div class="footer">
-            <!--Trailer from YouTube-->
-            <iframe src="https://www.youtube.com/embed/s7EdQ4FqbhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <hr>
-        <br>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <!--The Shining poster, trailer and blurb-->
+                        <div class="row">
+                            <div class="col">
+                                <p class="right-text">The Shining is really a testament to Kubricks attention to detail and entirely different level of directing than anyone else can really make a case for. Starring Jack Nicholson and Shelley Duvall The Shining follows the family--who is looking after the Outlook for the brutal winter months (despite the last caretaker killing his entire family on the premises). As viewers we watch as Jack Nicholsons character (ironically Jack as well) unwind slowly, and become more and more unstable, eventrually trying to chase down and kill his family as well. I highly recommend this movie--it is probably my favorite on this list and if you havent seen it yet, you are in for a treat!</p>
+                            </div>
 
-        <!--The Shining poster, trailer and blurb-->
-        <h1>The Shining</h1>
-        <div class="row">
-            <div class="col">
-                <p class="right-text">The Shining is really a testament to Kubricks attention to detail and entirely different level of directing than anyone else can really make a case for. Starring Jack Nicholson and Shelley Duvall The Shining follows the family--who is looking after the Outlook for the brutal winter months (despite the last caretaker killing his entire family on the premises). As viewers we watch as Jack Nicholsons character (ironically Jack as well) unwind slowly, and become more and more unstable, eventrually trying to chase down and kill his family as well. I highly recommend this movie--it is probably my favorite on this list and if you havent seen it yet, you are in for a treat!</p>
-            </div>
-
-            <div class="col">
-                <!--Poster from https://live.staticflickr.com/6088/6058198288_20f973463e_b.jpg-->
-                <img src=images/movie/the-shining.jpg alt="The Shining Poster">
-            </div>
-        </div>
-        <div class="footer">
-            <!--Trailer from YouTube-->
-            <iframe src="https://www.youtube.com/embed/HEew7zvpAWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <hr>
-        <br>
-
-        <!--Catch Me If You Can poster, trailer and blurb-->
-        <h1>Catch Me If You Can</h1>
-        <div class="row">
-            <div class="col">
-            <!--Poster from https://live.staticflickr.com/2512/4108572996_defd242e9f_b.jpg-->
-            <img src=images/movie/catch-me.jpg alt="Catch Me If You Can Poster">
+                            <div class="col">
+                                <!--Poster from https://live.staticflickr.com/6088/6058198288_20f973463e_b.jpg-->
+                                <img src=images/movie/the-shining.jpg alt="The Shining Poster">
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <!--Trailer from YouTube-->
+                            <iframe src="https://www.youtube.com/embed/HEew7zvpAWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="col">
-                <p class="left-text">Catch Me If You Can is another incredibly casted film, including 2 of (probably) the best actors of our time in Leonardo DiCaprio and Tom Hanks. On top of that this movie is based on a thrilling true story of fraud and deceit as a young adult grows up and tries to escape his old life. This movie is much more of a family film than most of the other films on this list--but it still holds its own against any movie here.</p>
+            <div class="card">
+                <div class="card-header" id="headingThree" style="background-color: #0164a1;">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: #007CC7; color: #C7D3DD"> Catch Me If You Can
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <!--Catch Me If You Can poster, trailer and blurb-->
+                        <div class="row">
+                            <div class="col">
+                            <!--Poster from https://live.staticflickr.com/2512/4108572996_defd242e9f_b.jpg-->
+                            <img src=images/movie/catch-me.jpg alt="Catch Me If You Can Poster">
+                            </div>
+
+                            <div class="col">
+                                <p class="left-text">Catch Me If You Can is another incredibly casted film, including 2 of (probably) the best actors of our time in Leonardo DiCaprio and Tom Hanks. On top of that this movie is based on a thrilling true story of fraud and deceit as a young adult grows up and tries to escape his old life. This movie is much more of a family film than most of the other films on this list--but it still holds its own against any movie here.</p>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <!--Trailer from YouTube-->
+                            <iframe src="https://www.youtube.com/embed/xas1UyTiVUw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="footer">
-            <!--Trailer from YouTube-->
-            <iframe src="https://www.youtube.com/embed/xas1UyTiVUw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <hr>
-        <br>
-
-        <!--Shawshank Redemption poster, trailer and blurb-->
-        <h1>Shawshank Redemption</h1>
-        <div class="row">
-            <div class="col">
-                <p class="right-text">Shawshank Redemption is another great movie--but rather than having a cast of super-stars like some of the other films here--it has a more modest cast and really is so good due to the incredible storyline the movie follows. No spoilers but it is a great movie--maybe not a family movie per se but still for sure a must watch for anyone who likes movies, and if you like prison movies then youll like it even more.</p>
-            </div>
-
-            <div class="col">
-                <!--Poster from https://live.staticflickr.com/1018/530032287_452df26af1_c.jpg-->
-                <img src=images/movie/shawshank.jpg alt="Shawshank Redemption Poster">
-            </div>  
-        </div>
-
-        <div class="footer">
-            <!--Trailer from YouTube-->
-            <iframe src="https://www.youtube.com/embed/K_tLp7T6U1c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <hr>
-        <br>
-
-        <!--Forrest Gump poster, trailer and blurb-->
-        <h1>Forrest Gump</h1>
-        <div class="row">
-            <div class="col">
-                <!--Poster from https://www.flickr.com/photos/mouserek/341292833/in/photolist-24aCgZb-KWzSVN-2jCtPH9-2hME5WJ-GUgYsB-2fMrptP-2jb28VT-2hcsxx2-LLmbCq-NEBUje-RpNAMX-29Fc6wZ-RuujNn-wadtc-dWKdX3-cbpt2E-cbpuLG-cbpqR5-uhoNoi-pSyDe-6XBYW9-5tYihL-c8pKSf-c8pNNo-5rUgn9-LLsyQz-xVjiCz-Rj4EDh-2ixYFaG-dqtbUz-2jQXj5d-LkewiV-ngzmNa-aqwrhY-fjuiCZ-2avJWRR-PsuRuL-6FzsiT-BN6tV-zXQJTE-9oQsPf-tWzwZt-8qzYaN-SDMUxm-cHb3WN-JtZWnY-bD7FhG-VTGxHa-AEVgy7-PDs3wG-->
-            <img src=images/movie/forrest-gump.jpg alt="Forrest Gump Poster">
-            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour" style="background-color: #0164a1;">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background-color: #007CC7; color: #C7D3DD"> Shawshank Redemption
+                        </button>
+                    </h2>
+                </div>
             
-            <div class="col">
-                <p class="left-text">Come on? You really thought I could make a top 5 movies list and not include this masterpiece? I dont really think I need to say much about this movie other than watch it. If you havent seen it--you NEED to stop reading this and go watch it now--even if you have seen it just stop reading this and go watch it! I cannot describe how great this movie is in words and cannot recommend it enough.</p>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <!--Shawshank Redemption poster, trailer and blurb-->
+                        <div class="row">
+                            <div class="col">
+                                <p class="right-text">Shawshank Redemption is another great movie--but rather than having a cast of super-stars like some of the other films here--it has a more modest cast and really is so good due to the incredible storyline the movie follows. No spoilers but it is a great movie--maybe not a family movie per se but still for sure a must watch for anyone who likes movies, and if you like prison movies then youll like it even more.</p>
+                            </div>
+
+                            <div class="col">
+                                <!--Poster from https://live.staticflickr.com/1018/530032287_452df26af1_c.jpg-->
+                                <img src=images/movie/shawshank.jpg alt="Shawshank Redemption Poster">
+                            </div>  
+                        </div>
+
+                        <div class="footer">
+                            <!--Trailer from YouTube-->
+                            <iframe src="https://www.youtube.com/embed/K_tLp7T6U1c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFive" style="background-color: #0164a1;">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="background-color: #007CC7; color: #C7D3DD"> Forrest Gump
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <!--Forrest Gump poster, trailer and blurb-->
+                        <div class="row">
+                            <div class="col">
+                                <!--Poster from https://www.flickr.com/photos/mouserek/341292833/in/photolist-24aCgZb-KWzSVN-2jCtPH9-2hME5WJ-GUgYsB-2fMrptP-2jb28VT-2hcsxx2-LLmbCq-NEBUje-RpNAMX-29Fc6wZ-RuujNn-wadtc-dWKdX3-cbpt2E-cbpuLG-cbpqR5-uhoNoi-pSyDe-6XBYW9-5tYihL-c8pKSf-c8pNNo-5rUgn9-LLsyQz-xVjiCz-Rj4EDh-2ixYFaG-dqtbUz-2jQXj5d-LkewiV-ngzmNa-aqwrhY-fjuiCZ-2avJWRR-PsuRuL-6FzsiT-BN6tV-zXQJTE-9oQsPf-tWzwZt-8qzYaN-SDMUxm-cHb3WN-JtZWnY-bD7FhG-VTGxHa-AEVgy7-PDs3wG-->
+                            <img src=images/movie/forrest-gump.jpg alt="Forrest Gump Poster">
+                            </div>
+                            
+                            <div class="col">
+                                <p class="left-text">Come on? You really thought I could make a top 5 movies list and not include this masterpiece? I dont really think I need to say much about this movie other than watch it. If you havent seen it--you NEED to stop reading this and go watch it now--even if you have seen it just stop reading this and go watch it! I cannot describe how great this movie is in words and cannot recommend it enough.</p>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <!--Trailer from YouTube-->
+                            <iframe src="https://www.youtube.com/embed/bLvqoHBptjg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="footer">
-            <!--Trailer from YouTube-->
-            <iframe src="https://www.youtube.com/embed/bLvqoHBptjg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
-        </div>
-        <hr>
-        <a href="movie-site.html" style="font-size: large;">Back to top ^</a>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
