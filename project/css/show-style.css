@@ -38,15 +38,8 @@ span {
     opacity: 0;
 }
 img {
-    padding: 20px;
-    width: 500px;
-    height: 700px;
-    transition: .3s;
-}
-img:hover {
-    width: 525px;
-    height: 750px;
-    transition: .3s;
+    width: 800px;
+    height: 1100px;
 }
 @media screen and (max-width:768px) {
     img {
