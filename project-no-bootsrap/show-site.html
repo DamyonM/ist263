@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/show-style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Damyons favorite cinematography.</title>
+</head>
+
+<body>
+    <main>
+        <div id="header">
+            <nav>
+                <div class="logo">
+                    <h4>DMDb</h4>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="movie-site.html">Favorite Movies</a>
+                    </li>
+                    <li>
+                        <a href="cont-movie-site.html">Favorite Controversial Movies</a>
+                    </li>
+                    <li>
+                        <a href="show-site.html" style="color: black">Favorite Shows</a>
+                    </li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav> 
+        </div>
+
+        <h1 id="show-title">Letterkenny!</h1>
+        <img id="poster" src="images/show/letterkenny.jpg" alt="Letterkenny poster">
+        <p id="about-show">I chose this show because it is a light-hearted, funny show to throw on in the background. Being a comedy, there is a lot of good jokes and funny sayings shared in the dialogue and even watching things like the behind the scenes proves to be hilarous--theyre acting isn't necessarily all a facade.</p>
+        
+        <!--Slider code-->
+        <div class="slide-container">
+            <input type="range" min="1" max="5" class="slider" id="show-slider">
+            <span id="which-show"></span>
+        </div>
+    </main>
+
+    <script>
+        var slider = document.getElementById("show-slider");
+        var output = document.getElementById("which-show");
+        var imgSrc = ["", "images/show/the-boys.jpg", "images/show/breaking-bad.jpg", "images/show/letterkenny.jpg", "images/show/lie-to-me.jpg", "images/show/rick-and-morty.jpg"]
+
+        //Gets the slider value
+        output.innerHTML = slider.value;
+
+        //Update slider value
+        slider.oninput = function() {
+            output.innerHTML = this.value;
+            
+            //Update the poster
+            document.getElementById("poster").src = imgSrc[output.innerHTML]
+
+            var oldTitle = document.getElementById("show-title");
+            var oldText = document.getElementById("about-show");
+
+            //Change text & blurb based on where slider is
+            switch(output.innerHTML) {
+                case '1':
+                    oldTitle.innerHTML = "The Boys!";
+                    oldText.innerHTML = "The Boys is the show itching that question everyones always asked: what if superheroes were not good but in fact bad with the appearance of being helpful. Though weird at some parts--this show still manages to make me laugh in one minute and have my jaw drop to the floor in shock at the next because of how events unfold (no spoilers here).";
+                    break;
+
+                case '2':
+                    oldTitle.innerHTML = "Breaking Bad!";
+                    oldText.innerHTML = "Breaking Bad is probably one of (if not the absolute) best shows made in the past decade. From the acting, to the writing, to the likeable cast of characters the plot creates, it all around is an incredible show, and if you havent watched it yet you should start now.";
+                    break;
+
+                case '3':
+                    oldTitle.innerHTML = "Letterkenny!";
+                    oldText.innerHTML = "I chose this show because it is a light-hearted, funny show to throw on in the background. Being a comedy, there is a lot of good jokes and funny sayings shared in the dialogue and even watching things like the behind the scenes proves to be hilarous--theyre acting isn't necessarily all a facade.";
+                    break;
+
+                case '4':
+                    oldTitle.innerHTML = "Lie To Me!";
+                    oldText.innerHTML = "Lie To Me is about a man who can read peoples face/body language to determine how truthful they are being. The premise alone is enough to pique my interest but when involving one of my favorite actors (Tim Roth) as the lead immediately I am in. The only bad thing about this show I can say is that sometimes it does fall into some cliches the 2010s crime shows shared--and sometimes the telling of the truth turns into an ex-machina which is never cool.";
+                    break;
+
+                case '5':
+                    oldTitle.innerHTML = "Rick & Morty!";
+                    oldText.innerHTML = "Rick & Morty is a cartoon show following the adventures of the self-proclaimed smartest man in the world and his grandson. Though at first it may sound cute and endearing--what it really turns into is an adult animated show, similar to the likes of Family Guy. The humor is on a level of its own, the guest stars add to the show for sure and the stellar animation is really puts it over the top for me.";
+                    break;
+                
+                //This should never trigger if working properly--only can achieve values 1-5
+                default:
+                    console.log("Didnt work--went to default");
+                    break;
+            }
+        }
+    </script>
+    <script src="css/nav.js"></script>
+</body>
+</html>
