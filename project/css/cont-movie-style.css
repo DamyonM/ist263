@@ -30,6 +30,7 @@ main .navigation {
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    vertical-align: baseline;
 }
 main .navigation li {
     list-style: none;
@@ -38,7 +39,7 @@ main .navigation li {
     border-radius: 4px;
     background: #fff;
     padding: 3px 3px 0;
-    opacity: .7;
+    opacity: .2;
     transition: .5s;
     color: black;
 }
