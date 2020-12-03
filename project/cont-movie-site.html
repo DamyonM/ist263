@@ -37,25 +37,60 @@
             </nav>
         </div>
 
-        <div class="row">
+        <div style="margin-top: 1em;">
+            <h2 id="movie-title" style="font-style: italic;">Movie Title will appear here!</h2>
+            <p id="movie-blurb">Try clicking one of the rectangles below!</p>
+        </div>
+
+        <div>
             <video id="slider" autoplay loop class="col">
                 <source src="images/cont-movie/american-history-x.mp4" type="video/mp4">
             </video>
         
         
             <!--Nav bar that shows the movies-->
-            <ul class="navigation">
-                <li onclick="videoUrl('images/cont-movie/american-history-x.mp4')"><img src="images/cont-movie/ahx-thumb.jpg" height="200" width="300" alt="American History X thumbnail">American History X</li>
-                <li onclick="videoUrl('images/cont-movie/taxi-driver.mp4')"><img src="images/cont-movie/td-thumb.jpg" height="200" width="300" alt="Taxi Driver thumbnail">Taxi Driver</li>
-                <li onclick="videoUrl('images/cont-movie/fmj.mp4')"><img src="images/cont-movie/fmj-thumb.jpg" height="200" width="300" alt ="Full Metal Jacket thumbnail">Full Metal Jacket</li>
-                <li onclick="videoUrl('images/cont-movie/django-unchained.mp4')"><img src="images/cont-movie/du-thumb.jpg" height="200" width="300" alt="Django Unchained">Django Unchained</li>
-                <li onclick="videoUrl('images/cont-movie/clockwork-orange.mp4')"><img src="images/cont-movie/cwo-thumb.jpg" height="200" width="300" alt="Clockwork Orange thumbnail">A Clockwork Orange</li>
+            <ul class="navigation" style="vertical-align: bottom; margin-bottom: 0;">
+                <li onclick="videoUrl('images/cont-movie/american-history-x.mp4', 'ahx')"><img src="images/cont-movie/ahx-thumb.jpg" height="200" width="300" alt="American History X thumbnail">American History X</li>
+                <li onclick="videoUrl('images/cont-movie/taxi-driver.mp4', 'td')"><img src="images/cont-movie/td-thumb.jpg" height="200" width="300" alt="Taxi Driver thumbnail">Taxi Driver</li>
+                <li onclick="videoUrl('images/cont-movie/fmj.mp4', 'fmj')"><img src="images/cont-movie/fmj-thumb.jpg" height="200" width="300" alt ="Full Metal Jacket thumbnail">Full Metal Jacket</li>
+                <li onclick="videoUrl('images/cont-movie/django-unchained.mp4', 'du')"><img src="images/cont-movie/du-thumb.jpg" height="200" width="300" alt="Django Unchained">Django Unchained</li>
+                <li onclick="videoUrl('images/cont-movie/clockwork-orange.mp4', 'cwo')"><img src="images/cont-movie/cwo-thumb.jpg" height="200" width="300" alt="Clockwork Orange thumbnail">A Clockwork Orange</li>
             </ul>
         </div>
     </main>
     <script>
-        function videoUrl(url) {
+        function videoUrl(url, title) {
             document.getElementById("slider").src = url;
+
+            switch(title) {
+                case 'ahx':
+                    newTitle = "American History X";
+                    newBlurb = "I chose American History X because it caught a lot of flak for the neo-Nazi connections of the main character (Edward Norton) as well as for a scene in particular--where Edward Nortons character literally curb stomps someone. It is a gruesome scene overall, and is deemed one of the most violent acts in a non-horror film.";
+                break;
+
+                case 'td':
+                    newTitle = "Taxi Driver";
+                    newBlurb = "I chose Taxi Driver because it talks a lot about mental illess, and the slow descent into madness of a NY taxi driver (Robert De Niro). I do not want to spoil any parts of the movie in specific--but it isnt a film for children or the feint of heart to say the least.";
+                break;
+
+                case 'fmj':
+                    newTitle = "Full Metal Jacket";
+                    newBlurb = "I chose Full Metal Jacket because it talks a lot about wartime in the US (which historically wasnt seen in homes until Vietnam--which is the war that is potrayed in this film). This movie has a lot of ups and downs, and also touches on the cracks of mental health for those who enlist in the military.";
+                break;
+
+                case 'du':
+                    newTitle = "Django Unchained";
+                    newBlurb = "I chose Django Unchained because of the loads of flak the director (Quentin Tarantino) and one of the lead actors (Leonardo DiCaprio) caught for the liberal use of the n word throughout the film. It is a film that tells a story about a freed slave--and it is probably the best movie on this list by far so I wont say too much. But with the cast it has, the director, and even jokes throughout the film (that you may even feel guilty at for laughing) it is a solid 9/10 for me.";
+                break;
+
+                case 'cwo':
+                    newTitle = "A Clockwork Orange";
+                    newBlurb = "I chose A Clockwork Orange because of how disturbing and outright gut-wrenching it is. The movie is banned in the UK by the films own creator (Stanley Kubrick). This is another film that I strongly recommend if you are not feint of heart--as it is considered one of the most disturbing horror/violence films of all time.";
+                break;
+            }
+
+            document.getElementById("movie-title").innerHTML = newTitle;
+            document.getElementById("movie-blurb").innerHTML = newBlurb;
         }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
