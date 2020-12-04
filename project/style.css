@@ -68,6 +68,12 @@ main video {
     height: 100%;
     object-fit: cover;
 }
+.cont-p {
+    font-size: x-large;
+}
+.cont-h1 {
+    font-style: italic;
+}
 
 /* For show page */
 .show-p {
@@ -75,6 +81,7 @@ main video {
     padding: 2rem;
 }
 
+/* For phones, tested on Samsung Galaxy Note 20 and the Chrome iPhone X setting, though with Chrome sometimes there were visual bugs, where there would be a random bar on the right (on refresh that bar vanished) */
 @media screen and (max-width:768px) {
     img {
         width: 100%;
@@ -82,6 +89,13 @@ main video {
     .row {
         -webkit-flex-direction: column;
         flex-direction: column;
+    }
+    .cont-p {
+        font-size: medium;
+    }
+    .cont-h1 {
+        font-style: italic;
+        font-size: large;
     }
     iframe {
         height: 11.35rem;
@@ -97,7 +111,35 @@ main video {
         width: 100%;
     }
     .cont-img {
-        width: 7em;
-        height: 3.5em;
+        width: 7rem;
+        height: 3.5rem;
+    }
+}
+
+/* For iPads (tested using Chrome iPad Pro setting) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    img {
+        width: 100%;
+    }
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    iframe {
+        height: 30rem;
+        width: 100%;
+    }
+    .movie-p, .show-p {
+        margin: 0;
+        padding: 2rem;
+        text-align: center;
+        font-size: 35px;
+    }
+    video {
+        width: 100%;
+    }
+    .cont-img {
+        width: 30rem;
+        height: 15rem;
     }
 }
